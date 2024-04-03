@@ -1,0 +1,198 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+@import url("https://fonts.googleapis.com/css2?family=Passion+One&display=swap");
+
+/*Criação de variáveis para fonte e cor*/
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, Sans-Serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: "Pacifico", cursive;
+    --cor1: #120C00;
+    --cor2: #F0C06E;
+    --cor3: #F6F6F6;  
+}
+
+/*Padrão Universal*/
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    color: var(--cor3);
+  }
+  
+a {
+    color: var(--cor2);
+    text-decoration: none;
+}
+  
+a:hover {
+    color: var(--cor3);
+    text-decoration: none;
+}
+  
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Playfair Display", serif;
+    margin: 30px;
+}
+
+/*--------------------------------------------------------------
+ # Mini Cabeçalho
+--------------------------------------------------------------*/
+#background{
+    width: 100%;
+    height: 100vh;
+    background: url("Img/background01.jpg") top center;
+    background-size: cover;
+    position: relative;
+}
+
+#infoContato{
+    top: 5px;
+    margin: auto;
+    text-align: right;
+    display: block;    
+    height: 40px;
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--cor3);
+}
+  
+.telefone {
+    transition: all 0.5s;
+    font-style: normal;
+    color: var(--cor3);
+    padding: 10px;
+    text-align: right;
+}
+
+.endereco {
+    transition: all 0.5s;
+    font-style: normal;
+    color: var(--cor3);
+    padding: 10px;
+    text-align: right;
+}
+
+#header {
+    border-bottom: 1px solid var(--cor1);
+    transition: all 0.5s;
+}
+  
+#caixa-titulo.caixa-titulo-scrolled {
+    top: 0;
+    border-bottom: 1px solid #37332a;
+}
+  
+#titulo {
+    justify-items: center;
+    margin: 0px;
+    font-size: 4vw;
+    line-height: 1;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+  
+h1 > a {
+    margin: auto;
+    justify-items: center;
+    margin: 0px;
+    color: var(--cor2);
+    text-shadow: 1px 0px 1px #6b6b6b;
+
+}
+
+span#burguer {
+    color: var(--cor2);
+    display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+span#burguer:hover {
+    color: black;
+}
+
+#menu {
+    background: #120c009d;
+    border-bottom: 1px solid rgba(12, 11, 9, 0.6);
+    transition: all 0.5s;
+    z-index: 997;
+    padding: 15px 0;
+    top: 10px;
+}
+  
+#menu.menu-scrolled {
+    top: 0;
+    background: var(--cor1);
+    border-bottom: 1px solid #37332a;
+}
+  
+#menu .titulo {
+    font-size: 28px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+}
+  
+#menu .titulo a {
+    color: #fff;
+}
+  
+#menu .titulo img {
+    max-height: 40px;
+}
+
+/*--------------------------------------------------------------
+# Home
+--------------------------------------------------------------*/
+#home {
+    padding: 0px;
+}
+
+#home:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+#home .container {
+    padding-top: 110px;
+}
+
+#home h1 {
+    margin: 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+}
+  
+#home h1 span {
+    color: #cda45e;
+}
+
+#home h2 {
+    color: #eee;
+    margin-bottom: 10px 0 0 0;
+    font-size: 22px;
+}
+
