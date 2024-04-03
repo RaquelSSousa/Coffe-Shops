@@ -55,18 +55,18 @@ h1, h2, h3, h4, h5, h6 {
 #infoContato{
     top: 5px;
     margin: auto;
-    text-align: right;
+    text-align: left;
     display: block;    
     height: 40px;
     font-size: 14px;
     font-weight: 300;
-    color: var(--cor3);
+    color: var(--cor2);
 }
   
 .telefone {
     transition: all 0.5s;
     font-style: normal;
-    color: var(--cor3);
+    color: var(--cor2);
     padding: 10px;
     text-align: right;
 }
@@ -74,21 +74,78 @@ h1, h2, h3, h4, h5, h6 {
 .endereco {
     transition: all 0.5s;
     font-style: normal;
-    color: var(--cor3);
+    color: var(--cor2);
     padding: 10px;
     text-align: right;
 }
 
-#header {
-    border-bottom: 1px solid var(--cor1);
+#menu {
+    background: #120c009d;
+    border-bottom: 1px solid rgba(12, 11, 9, 0.6);
     transition: all 0.5s;
+    z-index: 997;
+    padding: 15px 0;
+    top: 40px;
 }
   
-#caixa-titulo.caixa-titulo-scrolled {
+#menu.header-scrolled {
     top: 0;
-    border-bottom: 1px solid #37332a;
+    background: rgba(0, 0, 0, 0.651);
+    border-bottom: 1px solid #580d0d;
+  }
+  
+#menu .logo {
+    font-size: 28px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
 }
   
+#menu .logo a {
+    color: #fff;
+}
+
+menu {
+    display: none;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  menu ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    color: var(--cor2);
+    border-radius: 5px;
+  }
+
+  menu a:hover {
+    background-color: rgb(0, 0, 0);
+  }
+
+span#burguer {
+    color: var(--cor2);
+    display: block;
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+}
+
+span#burguer:hover {
+    color: var(--cor2);
+ }
+
 #titulo {
     justify-items: center;
     margin: 0px;
@@ -101,7 +158,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "Poppins", sans-serif;
 }
   
-h1 > a {
+header > h1 > a {
     margin: auto;
     justify-items: center;
     margin: 0px;
@@ -109,90 +166,3 @@ h1 > a {
     text-shadow: 1px 0px 1px #6b6b6b;
 
 }
-
-span#burguer {
-    color: var(--cor2);
-    display: block;
-    text-align: center;
-    padding: 10px;
-    cursor: pointer;
-}
-
-span#burguer:hover {
-    color: black;
-}
-
-#menu {
-    background: #120c009d;
-    border-bottom: 1px solid rgba(12, 11, 9, 0.6);
-    transition: all 0.5s;
-    z-index: 997;
-    padding: 15px 0;
-    top: 10px;
-}
-  
-#menu.menu-scrolled {
-    top: 0;
-    background: var(--cor1);
-    border-bottom: 1px solid #37332a;
-}
-  
-#menu .titulo {
-    font-size: 28px;
-    margin: 0;
-    padding: 0;
-    line-height: 1;
-    font-weight: 300;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    font-family: "Poppins", sans-serif;
-}
-  
-#menu .titulo a {
-    color: #fff;
-}
-  
-#menu .titulo img {
-    max-height: 40px;
-}
-
-/*--------------------------------------------------------------
-# Home
---------------------------------------------------------------*/
-#home {
-    padding: 0px;
-}
-
-#home:before {
-    content: "";
-    background: rgba(0, 0, 0, 0.5);
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
-  
-#home .container {
-    padding-top: 110px;
-}
-
-#home h1 {
-    margin: 0;
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 56px;
-    color: #fff;
-    font-family: "Poppins", sans-serif;
-}
-  
-#home h1 span {
-    color: #cda45e;
-}
-
-#home h2 {
-    color: #eee;
-    margin-bottom: 10px 0 0 0;
-    font-size: 22px;
-}
-
