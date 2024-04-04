@@ -122,10 +122,12 @@ span#burguer {
     text-align: center;
     padding: 5px;
     cursor: pointer;
+    z-index: 1001;
 }
 
 span#burguer:hover {
     color: var(--cor2);
+    z-index: 1001;
 }
 
 #titulo {
