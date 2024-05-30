@@ -7,9 +7,10 @@ function mudouTamanho() {
 }
 
 function clickMenu() {
-    if (itens.style.display == 'block') {
-        itens.style.display = 'none';
+    var menu = document.getElementById('itens');
+    if (menu.style.display == 'block') {
+        menu.style.display = 'none';
     } else {
-        itens.style.display = 'block';
+        menu.style.display = 'block';
     }
 }

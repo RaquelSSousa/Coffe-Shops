@@ -1,7 +1,8 @@
 @charset "UTF-8";
 
-
+/*Para telas com largura mínima de 768px */
 @media screen and (min-width: 768px) {  
+    /*Home*/
     #background {
         background-attachment: fixed;
     }
@@ -74,6 +75,7 @@
         position: right;
     }
 
+    /*Sobre nós*/
     #sobre > .imagem img {
         flex: 1;
         max-width: 800%;
@@ -92,6 +94,7 @@
         height: 100%;
     }
 
+    /*Contato*/
     #contato {
         background-color: var(--cor2);
         justify-content: space-between;
@@ -116,6 +119,7 @@
         text-shadow: 0px 0px 0px;
     }
 
+    /*Mapa*/
     iframe {
         width: 98%;
         height: 400px;
